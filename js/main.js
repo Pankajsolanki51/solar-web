@@ -96,3 +96,44 @@
     
 })(jQuery);
 
+
+let currentImageIndex = 0; // Keeps track of the current image in the gallery
+let images = []; // Array to store image sources for navigation
+
+function openLightbox(imgElement) {
+    var modal = document.getElementById("lightboxModal");
+    var lightboxImage = document.getElementById("lightboxImage");
+
+    // Store all image sources in the images array (from the gallery container)
+    images = document.querySelectorAll('.col-4 img');
+    currentImageIndex = Array.from(images).indexOf(imgElement);
+
+    // Set the source of the lightbox image to the clicked image
+    lightboxImage.src = imgElement.src;
+
+    // Display the modal
+    modal.style.display = "block";
+}
+
+function closeLightbox() {
+    var modal = document.getElementById("lightboxModal");
+    modal.style.display = "none";
+}
+
+function changeImage(direction) {
+    // Update the current image index based on the direction (next or previous)
+    currentImageIndex += direction;
+
+    // Wrap around if we go beyond the first or last image
+    if (currentImageIndex >= images.length) {
+        currentImageIndex = 0; // Go to the first image
+    } else if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1; // Go to the last image
+    }
+
+    // Get the next image source and set it in the lightbox
+    var lightboxImage = document.getElementById("lightboxImage");
+    lightboxImage.src = images[currentImageIndex].src;
+}
+
+

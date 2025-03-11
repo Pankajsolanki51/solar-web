@@ -84,21 +84,21 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="project.html" class="nav-item nav-link">Project</a>
+                <a href="service.html" class="nav-item nav-link">Products</a>
+                <!-- <a href="project.html" class="nav-item nav-link">Project</a> -->
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
+                        <!-- <a href="feature.html" class="dropdown-item">Feature</a> -->
                         <a href="quote.html" class="dropdown-item">Free Quote</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <!-- <a href="contact.html" class="nav-item nav-link active">Contact</a> -->
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="contact.html"  class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -128,30 +128,30 @@
                     <div class="p-lg-5 ps-lg-0">
                         <h6 class="text-primary">Contact Us</h6>
                         <h1 class="mb-4">Feel Free To Contact Us</h1>
-                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis vero harum reprehenderit, enim excepturi fuga sint quaerat adipisci sapiente ut, consequuntur debitis dicta maiores magnam! Expedita odit ducimus doloribus delectus. Reprehenderit, recusandae?.</p>
+                        <form action="send_email.php" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -160,6 +160,7 @@
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
@@ -197,31 +198,38 @@
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <!-- <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a> -->
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Project Gallery</h5>
                     <div class="row g-2">
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="">
+                            <img  class="cursoer_eff img-fluid rounded"   src="img/carousel-1.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-2.jpg" alt="">
+                            <img class="cursoer_eff img-fluid rounded" src="img/carousel-2.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="">
+                            <img class="cursoer_eff img-fluid rounded" src="img/carousel-3.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="">
+                            <img class="cursoer_eff img-fluid rounded" src="img/img-600x400-6.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="">
+                            <img class="cursoer_eff img-fluid rounded" src="img/img-600x400-1.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded" src="img/gallery-6.jpg" alt="">
+                            <img class="cursoer_eff img-fluid rounded" src="img/img-600x400-3.jpg" alt="" onclick="openLightbox(this)">
                         </div>
                     </div>
+                </div>
+
+                <div id="lightboxModal" class="lightbox-modal">
+                    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <img class="lightbox-content" id="lightboxImage">
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Newsletter</h5>
@@ -239,10 +247,12 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a href="#">Your Site Name</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
+                    <div class="col-md-6 text-center text-md-end" style="color: black; font-size: 6px;">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        Designed By <a  href="https://htmlcodex.com" style="color: black; font-size: 5px;"  target="_blank">HTML Codex</a>
+
+
+                        <br>Distributed By: <a href="https://htmlcodex.com" style="color: black; font-size: 5px;" target="_blank">ThemeWagon</a>
                     </div>
                 </div>
             </div>
